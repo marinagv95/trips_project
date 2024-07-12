@@ -11,9 +11,9 @@ class ParticipantsRepository:
         cursor.execute(
             """
                 INSERT INTO participants
-                    (id, trip_id, emails_to_invite_id ,name)
+                    (id, trip_id, emails_to_invite_id, name)
                 VALUES
-                    (?,?,?,?,?)
+                    (?,?,?,?)
             """,
             (
                 participant_infos["id"],
